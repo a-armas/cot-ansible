@@ -4,7 +4,7 @@
   vars:
    bucket_name: "skillup-s3-a.armas-001"
    profile: personal
-   mode: get
+   mode: "get"
    dest_dir: "/var/www/html/"
    object: "index.html"
   tasks:
