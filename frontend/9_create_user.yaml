@@ -1,0 +1,15 @@
+---
+- name: CREATE USERS
+  hosts: all
+  gather_facts: no
+  become: true
+  tasks:
+  - name: create users
+    user:
+      name: "{{item}}"
+      groups: test
+      state: present
+    with_items:
+        - apple
+        - banana
+        - carrot

@@ -1,0 +1,12 @@
+---
+- import_playbook: 1_apt_update.yaml #No Syntax error
+- import_playbook: 2_sshd_update.yaml #No Syntax error
+- import_playbook: 3_logrotate_config_copy.yaml #No Syntax error
+- import_playbook: 4_install_webserver_pkg.yaml #No Syntax error
+- import_playbook: 5_create_temp_dir.yaml #No Syntax error
+- import_playbook: 6_gethtml_from_S3.yaml #No Syntax error
+- import_playbook: 7_enable_apache.yaml #No Syntax error
+- import_playbook: 8_delete_temp_dir.yaml #No Syntax error
+- import_playbook: 9_create_user.yaml #No Syntax error
+- import_playbook: 10_delete_user.yaml #No Syntax error
+- import_playbook: 11_change_file_perm.yaml #No Syntax error

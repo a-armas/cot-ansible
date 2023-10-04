@@ -1,0 +1,19 @@
+---
+- name: Enable Apache Service
+  hosts: all
+  become: true
+  tasks:
+  - name: ensure apache service is started and also starts on boot
+    service:
+     name: apache
+     state: started
+     enabled: true
+    become: true
+    notify:
+     - start_apache
+  handlers:
+  - name: start_apache
+    service:
+     name: apache
+     state: started
+    become: true
