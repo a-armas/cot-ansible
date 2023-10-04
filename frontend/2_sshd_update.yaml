@@ -16,6 +16,7 @@
     lineinfile:
      path: "{{sshd_path}}"
      regex: "{{regex_pattern}}"
+     state: present
     notify:
      - restart sshd
      - restart ssh
