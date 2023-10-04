@@ -3,7 +3,6 @@
   hosts: localhost
   vars:
    bucket_name: "skillup-s3-a.armas-001"
-   profile: a.armas
    mode: "get"
    dest_dir: "/var/www/html/"
    object: "index.html"
