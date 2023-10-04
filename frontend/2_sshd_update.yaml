@@ -1,6 +1,6 @@
 ---
 - name: SSHD UPDATE AND RESTART
-  hosts: all
+  hosts: localhost
   gather_facts: no
   become: true
   vars:
