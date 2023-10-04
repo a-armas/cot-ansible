@@ -6,7 +6,8 @@
   vars:
    sshd_path: "/etc/ssh/sshd_config"
    sshd_backup_path: "/etc/ssh/sshd_config.backup"
-   regex_pattern: "s/^#?Port 22$/Port 6522/"
+   regex_pattern: Port 22
+   line: Port 6522
   tasks:
   - name: Backup Original sshd_config
     copy:
@@ -16,7 +17,7 @@
     lineinfile:
      path: "{{sshd_path}}"
      regex: "{{regex_pattern}}"
-     state: present
+     line: "{{line}}"
     notify:
      - restart sshd
      - restart ssh
