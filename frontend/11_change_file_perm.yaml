@@ -1,6 +1,6 @@
 ---
  - name: Change File Perm
-   hosts: all
+   hosts: localhost
    become: true
    gather_facts: no
    vars:
