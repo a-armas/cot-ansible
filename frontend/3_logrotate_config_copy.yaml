@@ -1,0 +1,12 @@
+---
+- name: LOGROTATE COPY
+  hosts: all
+  gather_facts: true
+  vars:
+   logrotate_config_file: "/etc/logrotate.conf"
+   logrotate_config_path: "/etc/logrotate.d/"
+  tasks:
+  - name: Copy Logrotate config
+    copy:
+     src: "{{logrotate_config_file}}"
+     dest: "{{logrotate_config_path}}/{{logrotate_config_file}}"
