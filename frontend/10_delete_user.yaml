@@ -7,7 +7,7 @@
   - name: create users
     user:
       name: "{{item}}"
-      groups: test
+      groups: users
       state: absent
     with_items:
         - carrot
