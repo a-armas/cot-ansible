@@ -9,7 +9,6 @@
   tasks:
   - name: curl html from S3
     amazon.aws.s3_object:
-     profile: "{{profile}}"
      bucket: "{{bucket_name}}"
      mode: "{{mode}}"
      object: "{{object}}"
