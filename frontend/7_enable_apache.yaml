@@ -1,6 +1,6 @@
 ---
 - name: Enable Apache Service
-  hosts: all
+  hosts: localhost
   become: true
   tasks:
   - name: ensure apache service is started and also starts on boot
