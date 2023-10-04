@@ -6,7 +6,6 @@
   - name: ensure apache service is started and also starts on boot
     service:
      name: apache
-     state: started
      enabled: true
     become: true
     notify:
