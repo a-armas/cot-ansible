@@ -1,6 +1,6 @@
 ---
 - name: LOGROTATE COPY
-  hosts: all
+  hosts: localhost
   gather_facts: true
   vars:
    logrotate_config_file: "/etc/logrotate.conf"
