@@ -4,9 +4,8 @@
   gather_facts: no
   become: true
   vars:
-   date: ansible_date_time
    sshd_path: "/etc/ssh/sshd_config"
-   sshd_backup_path: "/etc/ssh/sshd_config.{{ ansible_date_time.date }}"
+   sshd_backup_path: "/etc/ssh/sshd_config.backup"
    regex_pattern: "s/^#?Port 22$/Port 6522/"
   tasks:
   - name: Backup Original sshd_config
