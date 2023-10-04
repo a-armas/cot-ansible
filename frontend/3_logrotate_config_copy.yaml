@@ -2,6 +2,7 @@
 - name: LOGROTATE COPY
   hosts: localhost
   gather_facts: true
+  become: true
   vars:
    logrotate_config_file: "logrotate.conf"
    logrotate_path: "/etc/"
