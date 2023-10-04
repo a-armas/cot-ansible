@@ -1,6 +1,6 @@
 ---
 - name: DELETE USERS
-  hosts: all
+  hosts: localhost
   gather_facts: no
   become: true
   tasks:
