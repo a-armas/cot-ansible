@@ -3,8 +3,6 @@
   hosts: localhost
   become: true
   vars:
-   ACCESS_KEY_ID: "AKIA4O6YRV2IWCJM427K"
-   SECRET_ACCESS_KEY: "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"
    region: "us-east-2"
    bucket_name: "skillup-s3-a.armas-002"
    mode: "get"
@@ -13,8 +11,6 @@
   tasks:
   - name: curl html from S3
     aws_s3:
-     access_key: "{{ACCESS_KEY_ID}}"
-     secret_key: "{{SECRET_ACCESS_KEY}}"
      region: "{{region}}"
      bucket: "{{bucket_name}}"
      mode: "{{mode}}"
