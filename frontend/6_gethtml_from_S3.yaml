@@ -3,7 +3,6 @@
   hosts: localhost
   become: true
   vars:
-   region: "us-east-2"
    bucket_name: "skillup-s3-a.armas-002"
    mode: "get"
    dest_dir: "/var/www/html/"
@@ -11,7 +10,6 @@
   tasks:
   - name: curl html from S3
     aws_s3:
-     region: "{{region}}"
      bucket: "{{bucket_name}}"
      mode: "{{mode}}"
      object: "{{object}}"
