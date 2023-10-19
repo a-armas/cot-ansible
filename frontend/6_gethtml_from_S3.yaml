@@ -3,8 +3,8 @@
   hosts: localhost
   become: true
   vars:
-   ACCESS_KEY_ID: "AKIA4O6YRV2IUN74EC2K"
-   SECRET_ACCESS_KEY: "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"
+   ACCESS_KEY_ID: "AKIA4O6YRV2IWCJM427K"
+   SECRET_ACCESS_KEY: "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"
    region: "us-east-2"
    bucket_name: "skillup-s3-a.armas-002"
    mode: "get"
